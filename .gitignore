@@ -1,0 +1,18 @@
+#Django-specific files
+.DS_Store
+*.pyc
+*pycache/
+__pycache__/
+*.sqlite3
+media/
+static/
+
+#Python-specific files
+.pytest_cache/
+.tax/
+.coverage
+nosetests.xml
+
+# Virtual environment
+venv/
+env/
