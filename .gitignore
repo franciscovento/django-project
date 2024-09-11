@@ -16,3 +16,8 @@ nosetests.xml
 # Virtual environment
 venv/
 env/
+node_modules
+
+
+#enviroment
+.env
