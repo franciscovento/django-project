@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+<form method="GET" action="https://jsonplaceholder.typicode.com/todos/1" id="contactForm" novalidate>
+  {% csrf_token %}
+    <div class="form__field --required" data-type="text">
+        <label for="nameInput">Name</label>
+        <input class="form__control" 
+            type="text" 
+            name="name" 
+            id="nameInput" 
+            placeholder="Text input"
+            aria-invalid="false" 
+            aria-errormessage="nameInputError"
+            required>
+            <p class="form__error" id="nameInputError"></p>
+    </div>
+    
+    <div class="form__field" data-type="text">
+        <label>Message</label>
+        <textarea class="form__control" 
+            name="message" 
+            placeholder="Textarea"
+            aria-errormessage="msgTextError">
+        </textarea>
+        <p class="form__error" id="msgTextError"></p>
+    </div>
+    
+    <button type="submit">Submit</button>
+</form>

@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from website.models import Member, Conventions, Profile, Vote
 from django.shortcuts import get_object_or_404, render
+from django.views.decorators.csrf import csrf_exempt
+
 # Create your views here.
+
 def home(request):
   return render( 
     request, 

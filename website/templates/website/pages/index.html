@@ -1,4 +1,8 @@
-{% extends 'website/base.html' %}
+{% extends 'website/base.html' %} 
+
 {% block 'content' %}
 <h1>Template</h1>
+
+
+{% include "website/components/forms/contact-form.html" with title="Contacto form" subtitle="send your info" %}
 {% endblock %}
